@@ -108,16 +108,16 @@ function DecryptText() {
     document.body.appendChild(element);
     element.click();
   };
-
-  return (
+ return (
+    // JSX for DecryptText component
     <div className="overflow-hidden pb-40">
-      <NavbarDemo />
+      {/* Navbar and other elements */}
       <div className="text-center mt-32 text-6xl text-sky-400">Decrypt Text</div>
       <div className="flex flex-row items-center justify-around">
         <ThreeDCardDemo selectedImage={selectedImage} handleImageChange={handleImageChange} />
         <SignupFormDemo decryptedText={decryptedText} handleDecryptClick={handleDecryptClick} handleDownloadTxt={handleDownloadTxt} />
       </div>
-      <BackgroundBeams />
+      {/* BackgroundBeams and other elements */}
     </div>
   );
 }
